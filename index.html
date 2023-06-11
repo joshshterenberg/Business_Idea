@@ -46,12 +46,44 @@
 							<article id="intro">
 								<h2 class="major" style="width: 100%">What topics would you like to see today?</h2>
 								<ul class="actions">
-									<li><span class="image main"><img src="images/pic01.jpg" alt="" /></span></li>
-									<li><span class="image main"><img src="images/pic01.jpg" alt="" /></span></li>
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
 								</ul>
 								<ul class="actions">
-									<li><span class="image main"><img src="images/pic01.jpg" alt="" /></span></li>
-									<li><span class="image main"><img src="images/pic01.jpg" alt="" /></span></li>
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
+								</ul>
+								<ul class="actions">
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
+								</ul>
+								<ul class="actions">
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
+									<li><span class="image main">
+										<img src="images/pic01.jpg">
+										<p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">Your Text Here</p>
+									</span></li>
 								</ul>
 							</article>
 
@@ -361,6 +393,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				var image = document.getElementByClass("image main")
+				image.addEventListener("click", function() {
+				  if (image.src.match("pic01")) {
+				    image.src = "images/pic02.jpg";
+				  } else {
+				    image.src = "images/pic01.jpg";
+				  }
+				});
+			</script>
 
 	</body>
 </html>
